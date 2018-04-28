@@ -1,0 +1,191 @@
+html
+    head
+        include lib
+        link(rel='stylesheet', href='css/index.css')
+        script(type='text/javascript', src='js/index.js')
+    body
+        section.section-homepage.bg-agile
+            .container-fluid.page1
+                include nav
+                #banner-content.banner-content
+                    .anm-content
+                    .txt-content.vertical-center
+                        h1.color-wheat.wow.bounceInUp
+                            | Teaching AI to Trade&nbsp;
+                            br.d-sm-none
+                            | in 5 Minutes
+                        p.wow.bounceInLeft.mb-0(data-wow-delay='0.6s') No Math, No Coding, No Algorithm
+                        a.btn-lg.justify-content-center.btn.btn-outline-light.wow.fadeIn.mt-5(href='s/', target='_blank')
+                            | AgileQuant
+                            span.btn- ▶
+        section#intro.section-video
+            .container.page2.py-5
+                .row
+                    #video-control.col-md-8.offset-md-2.col-sm-10.offset-sm-1.col-lg-10.offset-lg-1.wow.fadeInDown
+                        .video-default
+                        #play-btn.play-btn
+                        video#video.video(loop)
+                            source(src='img/preview.mp4', type='video/mp4')
+                        .mask
+                    p.text-box.col-12.pt-5.wow.fadeIn.text-xl-center.text-md-center
+                        | In this 2-minute video, we will show you the key idea and the basic usage of AgileQuant.
+                        br
+                        | After watching this video, you can start creating your own trading AI and backtest it in 5 minutes, with NO programming at all.
+        section#feature.section-feature
+            .container.page3.mt-5
+                .row
+                    .col-md-6.img-list.d-none.d-xl-block
+                        .img-top.wow.fadeIn
+                        .img-bot.wow.fadeIn
+                    .col-md-12.col-sm-12.col-xl-6.wow.fadeIn
+                        h2.text-right.mb-5.mt-3
+                            | Teaching
+                            br.d-sm-none
+                            | &nbsp;Rather Than&nbsp;
+                            br.d-sm-none
+                            | Coding
+                        .text-center.d-xl-none.wow.fadeInLeft
+                            img.rounded.mb-5.mt-3(src='img/feature-correct.png', width='100%' alt='')
+                        p
+                            | Using traditional quant platforms, implementing even a simple trading algorithm is time-consuming
+                            | and error-prone. In AgileQuant, AI learns your trading strategy by looking at just a dozen of your
+                            | trades in a fully simulated environment.
+                        p
+                            | Teaching an AI to trade takes minutes while coding an algorithm to trade takes hours. We believe
+                            | that your precious time should be spent on thinking genius trading ideas, not wasted on tedious
+                            | coding work.
+            .container-fluid.page3-quantify
+                .row
+                    h2.col-12.text-center.wow.fadeIn.ideas.pt-sm-5
+                        | Quantify Imprecise&nbsp;
+                        br.d-sm-none
+                        | Trading Ideas
+                .row
+                    .col-xl-10.offset-xl-1.computer.col-md-10.offset-md-1.col-sm-8.offset-sm-2.wow.fadeIn
+                .row.py-5
+                    .container
+                        .row
+                            .col-12
+                                p.wow.fadeInLeft
+                                    | Most trend trading strategies are difficult to quantify because they are intrinsically imprecise. It is a headache to precisely define subjective concepts such as Resistance, Support, Volume Shrinkage and many others.
+                                p.wow.fadeInRight
+                                    | AgileQuant uses specialized machine learning models with thousands of pre-defined features to turn your imprecise ideas into precise quant trading algorithms. All you need to convey is when to buy and sell.
+        section.section-timeline
+            .bgc-gary
+                .container
+                    .row
+                        .col-6.d-none.d-xl-block
+                        .col-12.wow.fadeIn.col-xl-6
+                            h2.text-center
+                                | Iterative Tuning&nbsp;
+                                br.d-sm-none
+                                | Until Ready
+                            p.bgc-gary-top.pt-4
+                                | Iterative tuning is particularly useful in changing markets where trading strategies have to be continuously optimized. In AgileQuant, you can easily optimize your trading AI at any time.
+                    .row.d-none.d-xl-block
+                        .interface1.pos-abs.wow.fadeInLeft
+                        .interface2.pos-abs.wow.fadeInRight
+                        .interface3.pos-abs.wow.fadeInLeft
+                        .line-left.pos-abs.wow.fadeIn
+                        .line-right.pos-abs.wow.fadeIn
+                    .row
+                        .text-center.d-xl-none.col-12.wow.fadeInLeft
+                            img.rounded.mb-3(src='img/interface_2.gif', width='100%' alt='')
+                        p.col-xl-7.col-12.wow.fadeInRight.bgc-gary-middle
+                            span.align-bottom
+                                | Once a trading AI is created, it can be reviewed and backtested immediately. You can always teach it again by feeding more trading points or correcting existing ones until you feel it is ready for real trading.
+            .container.bgc-white.d-none.d-xl-block.wow.fadeIn
+        section.section-contact
+            .container.py-5
+                .row
+                    .col-xl-12.wow.fadeIn
+                        | We now have a limited version of AgileQuant which supports creating trading AI for cryptocurrency markets.
+                    .col-xl-12.pt-5.wow.fadeIn.download-link-container
+                        button.btn-lg.mr-3.justify-content-center.btn.btn-outline-light.wow.fadeIn(type='button', onclick='to_href("s/")')
+                            | Try It Now
+                        button.btn-lg.mr-3.justify-content-center.btn.btn-outline-light.wow.fadeIn(type='button', onclick='to_href("http://github.com/")')
+                            | GitHub
+                    .col-12.pt-5.wow.fadeIn
+                        p We plan to release AgileQuant 1.0 by August, 2018.
+                        p Key functionalities include:
+                        ul
+                            li Creating trading AI by simulated trading
+                            li Backtesting and iterative tuning
+                            li Built-in trading AI's for classical strategies
+                            li Real trading in currency, future, stock and cryptocurrency markets
+        section.section-try
+            .container.py-5
+                .row
+                    h1.col-12.text-center.mb-5.wow.fadeIn.fall-line Roadmap
+                .d-none.d-xl-block
+                    .row.line
+                        .col-3.offset-3
+                            h3.mb-3.wow.fadeIn June 2018
+                            p.wow.fadeIn v0.8: real trading of cryptocurrencies, improved AI training algorithms, dynamic backtesting
+                        .col-3.offset-2
+                            h3.mb-3.wow.fadeIn June 2019
+                            p.wow.fadeIn
+                                | v2.0: real trading of currencies, iOS and Android apps, incorporated AI training and real trading, proactive tuning of trading AI, more built-in trading AI’s
+                    .row.line
+                        .col-3.offset-1
+                            h3.mb-3.wow.fadeIn March 2018
+                            p.wow.fadeIn
+                                | v0.5: simulated trading, basic AI training algorithms, static backtesting
+                        .col-3.offset-2.text-left
+                            h3.mb-3.wow.fadeIn September 2018
+                            p.wow.fadeIn
+                                | v1.0: real trading of stocks and futures, mature AI training algorithms, built-in trading AI’s
+                .row.d-xl-none
+                    .col-10.offset-1
+                        h3.mb-3.wow.fadeIn March 2018
+                        p.wow.fadeIn v0.5: simulated trading, basic AI training algorithms, static backtesting
+                    .col-10.offset-1
+                        h3.mb-3.wow.fadeIn June 2018
+                        p.wow.fadeIn
+                            | v0.8: real trading of cryptocurrencies, improved AI training algorithms, dynamic backtesting
+                    .col-10.offset-1
+                        h3.mb-3.wow.fadeIn March 2018
+                        p.wow.fadeIn
+                            | v1.0: real trading of stocks and futures, mature AI training algorithms, built-in trading AI’s
+                    .col-10.offset-1
+                        h3.mb-3.wow.fadeIn June 2019
+                        p.wow.fadeIn
+                            | v2.0: real trading of currencies, iOS and Android apps, incorporated AI training and real trading,
+                            | proactive tuning of trading AI, more built-in trading AI’s
+        section.section-leave
+            .container.py-5
+                .row
+                    p.col-12.text-center.wow.fadeIn
+                        | Want to become one of the first partners
+                        br.d-none.d-xl-block.d-md-block
+                        | or inverstors of AgileQuant?
+
+                    p.col-12.text-center.text-danger#text_error.hide
+                        | Oops, please try again.
+                form.row(action='javascirpt:void(0);')
+                    .col-12.col-md-4.col-xl-4.offset-md-2.offset-xl-2.my-2
+                        input.form-control.wow.fadeIn#you_name(type='text', placeholder='Your name' required)
+                    .col-12.col-md-4.col-xl-4.my-2
+                        input.wow.fadeIn.form-control#company(type='text', placeholder='Company' required)
+                    .col-12.col-md-4.col-xl-4.offset-md-2.offset-xl-2.my-2
+                        input.wow.fadeIn.form-control#email(type='email', placeholder='Email' required)
+                    .col-12.col-md-4.col-xl-4.my-2
+                        button.wow.fadeIn.btn.btn-outline-dark.col-12#send(type='submit')  Send Request
+        section.section-footer
+            .container
+                .row.py-5
+                    .col-12.wow.fadeIn
+                        img(width='100', src='img/logo-light.svg')
+                .row.pb-5.href-items
+                    a.btn.btn-agile-light(href='.#intro') Introduction
+                    a.btn.btn-agile-light(href='.#feature') Feature
+                    a.btn.btn-agile-light(href='s/', target='_blank') Try It Now
+                    a.btn.btn-agile-light(href='.#about') About Us
+                    a.btn.btn-agile-light(href='mailto:service@agilequant.io') Support
+                .row.pb-5
+                    .col-12
+                        p.wow.fadeIn
+                            | The material on this website is provided for informational purposes only and does not constitute
+                            | an offer to sell, a solicitation to buy, or a recommendation or endorsement for any security or
+                            | strategy, nor does it constitute an offer to provide investment advisory services by AgileQuant.
+

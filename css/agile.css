@@ -1,0 +1,45 @@
+body {
+    font-family: "FaktSoftPro Normal", "Open Sans", "helvetica", "sans-serif";
+    color: #262734;
+}
+
+h1, h2, h3 {
+    font-family: "FaktSoftPro Light", "Open Sans", "helvetica", "sans-serif";
+}
+
+nav {
+    z-index: 100;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bg-agile {
+    background-color: #262734;
+}
+
+.color-agile {
+    color: #262734;
+}
+
+.color-wheat {
+    color: #F5DEB3;
+}
+
+.color-coral {
+    color: #F08080;
+}
+
+.btn-agile-light {
+    color: #F8F9FA;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.btn-agile-light:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
